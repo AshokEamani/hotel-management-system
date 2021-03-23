@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>{{amenity.a_title}}</h1>
+	<small><p style="display: inline">	<strong>ID:</strong>	{{amenities.a_id}}</p></small>
+	<small><p style="display: inline">	<strong>Type:</strong>	{{amenities.a_type}}</p></small>
+	<small><p style="display: inline">	<strong>Capacity:</strong>	{{amenities.a_capacity}}</p></small>
+	<small><p style="display: inline">	<strong>Status:</strong>	{{amenities.a_status}}</p></small>
+
+	<hr>
+
+	<div>
+		{{amenities.a_description | safe}}
+	</div>
+{% endblock %}
